@@ -462,15 +462,15 @@
     }
   }
 
-  fetch('https://app-router.leancloud.cn/2/route?appId=')
+  fetch('https://app-router.leancloud.cn/2/route?appId=Ruoxxi')
     .then(response => response.json())
     .then(({ api_server }) => {
       var Counter = (method, url, data) => {
         return fetch(`https://${api_server}/1.1${url}`, {
           method,
           headers: {
-            'X-LC-Id'     : '',
-            'X-LC-Key'    : '',
+            'X-LC-Id'     : 'Ruoxxi',
+            'X-LC-Key'    : '151627Aa',
             'Content-Type': 'application/json',
           },
           body: JSON.stringify(data)
